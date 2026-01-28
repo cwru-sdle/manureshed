@@ -158,57 +158,57 @@ results <- run_builtin_analysis(scale = "county", year = 2016)
 #>  Integration complete
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/RtmpNpFMAi/county_agricultural_2016.rds
+#> Saved spatial data to: /tmp/Rtmp0dSqZ3/county_agricultural_2016.rds
 #> File size: 1.04 MB
 #> Rows: 3112, Columns: 17
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpNpFMAi/county_nitrogen_integrated_2016.rds
+#> Saved spatial data to: /tmp/Rtmp0dSqZ3/county_nitrogen_integrated_2016.rds
 #> File size: 1.1 MB
 #> Rows: 3112, Columns: 23
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpNpFMAi/county_nitrogen_centroids_2016.csv
+#> Saved centroid data to: /tmp/Rtmp0dSqZ3/county_nitrogen_centroids_2016.csv
 #> File size: 760.52 KB
 #> Rows: 3112, Columns: 24
 #> Longitude range: [-124.158, -67.637]
 #> Latitude range: [25.49, 48.826]
-#> Saved spatial data to: /tmp/RtmpNpFMAi/county_phosphorus_integrated_2016.rds
+#> Saved spatial data to: /tmp/Rtmp0dSqZ3/county_phosphorus_integrated_2016.rds
 #> File size: 1.09 MB
 #> Rows: 3112, Columns: 23
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpNpFMAi/county_phosphorus_centroids_2016.csv
+#> Saved centroid data to: /tmp/Rtmp0dSqZ3/county_phosphorus_centroids_2016.csv
 #> File size: 736.85 KB
 #> Rows: 3112, Columns: 24
 #> Longitude range: [-124.158, -67.637]
 #> Latitude range: [25.49, 48.826]
-#> Saved analysis summary to: /tmp/RtmpNpFMAi/analysis_summary_2016.rds
+#> Saved analysis summary to: /tmp/Rtmp0dSqZ3/analysis_summary_2016.rds
 #> Format: RDS
 #> File size: 0.76 KB
-#>  Results saved to:/tmp/RtmpNpFMAi
+#>  Results saved to:/tmp/Rtmp0dSqZ3
 #>   Files created:6
 #> 
 #> ======================================================================
 #> ANALYSIS COMPLETE
 #> ======================================================================
-#> Processing time:0.08minutes
+#> Processing time:0.09minutes
 #> Scale:county
 #> Year:2016
 #> Nutrients analyzed:nitrogen, phosphorus
 #> Spatial units:3112
 #> WWTP facilities:30994
-#> Output directory:/tmp/RtmpNpFMAi
+#> Output directory:/tmp/Rtmp0dSqZ3
 #> ======================================================================
 output_dir <- file.path(tempdir(), "gis_outputs")
 gis_files <- export_for_gis(results, output_dir)
 #> Warning: Field names abbreviated for ESRI Shapefile driver
-#> Warning: GDAL Error 1: /tmp/RtmpNpFMAi/gis_outputs/agricultural_results.shp does not appear to be a file or directory.
-#> Created shapefile: /tmp/RtmpNpFMAi/gis_outputs/agricultural_results.shp
-#> Created GeoJSON: /tmp/RtmpNpFMAi/gis_outputs/agricultural_results.geojson
+#> Warning: GDAL Error 1: /tmp/Rtmp0dSqZ3/gis_outputs/agricultural_results.shp does not appear to be a file or directory.
+#> Created shapefile: /tmp/Rtmp0dSqZ3/gis_outputs/agricultural_results.shp
+#> Created GeoJSON: /tmp/Rtmp0dSqZ3/gis_outputs/agricultural_results.geojson
 #> Warning: Field names abbreviated for ESRI Shapefile driver
-#> Warning: GDAL Error 1: /tmp/RtmpNpFMAi/gis_outputs/nitrogen_integrated.shp does not appear to be a file or directory.
+#> Warning: GDAL Error 1: /tmp/Rtmp0dSqZ3/gis_outputs/nitrogen_integrated.shp does not appear to be a file or directory.
 #> Warning: Field names abbreviated for ESRI Shapefile driver
-#> Warning: GDAL Error 1: /tmp/RtmpNpFMAi/gis_outputs/phosphorus_integrated.shp does not appear to be a file or directory.
+#> Warning: GDAL Error 1: /tmp/Rtmp0dSqZ3/gis_outputs/phosphorus_integrated.shp does not appear to be a file or directory.
 # }
 ```

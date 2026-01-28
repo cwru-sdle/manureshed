@@ -1,9 +1,18 @@
 # Changelog
 
+## manureshed 0.1.2
+
+- Fixed the hexa color problems
+- Added a cheatsheet
+- Added region comparison function
+
 ## manureshed 0.1.1
+
+CRAN release: 2026-01-26
 
 ### New Features
 
+- Added github pkgdown for documentation
 - Added
   [`compare_scenarios()`](https://exelegch.github.io/manureshed-docs/reference/compare_scenarios.md)
   for side-by-side scenario comparison

@@ -20,7 +20,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">manureshed</a>
 
-    <small class="nav-text text-default me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.1</small>
+    <small class="nav-text text-default me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Released version">0.1.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,7 +74,7 @@
                         <h4 data-toc-skip class="author">Olatunde D.
 Akanbi</h4>
             
-            <h4 data-toc-skip class="date">2026-01-25</h4>
+            <h4 data-toc-skip class="date">2026-01-27</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/cwru-sdle/manureshed/blob/HEAD/vignettes/getting-started.Rmd" class="external-link"><code>vignettes/getting-started.Rmd</code></a></small>
       <div class="d-none name"><code>getting-started.Rmd</code></div>
@@ -131,11 +131,17 @@ region) and can integrate wastewater treatment plant (WWTP) effluent
 data to show how municipal nutrient loads affect agricultural areas.</p>
 </div>
 <div class="section level2">
+<h2 id="view-cheatsheet">View cheatsheet<a class="anchor" aria-label="anchor" href="#view-cheatsheet"></a>
+</h2>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">view_cheatsheet</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
 <h2 id="quick-start---complete-analysis">Quick Start - Complete Analysis<a class="anchor" aria-label="anchor" href="#quick-start---complete-analysis"></a>
 </h2>
 <p>The easiest way to get started is with
 <code><a href="../reference/quick_analysis.html">quick_analysis()</a></code>:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Complete analysis with maps and plots</span></span>
 <span><span class="va">results</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/quick_analysis.html">quick_analysis</a></span><span class="op">(</span></span>
 <span>  scale <span class="op">=</span> <span class="st">"huc8"</span>,           <span class="co"># Choose: "county", "huc8", or "huc2"</span></span>
@@ -153,7 +159,7 @@ directory</p>
 <div class="section level3">
 <h3 id="check-available-data">1. Check Available Data<a class="anchor" aria-label="anchor" href="#check-available-data"></a>
 </h3>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># See what data is available</span></span>
 <span><span class="fu"><a href="../reference/check_builtin_data.html">check_builtin_data</a></span><span class="op">(</span><span class="op">)</span></span>
 <span></span>
@@ -163,7 +169,7 @@ directory</p>
 <div class="section level3">
 <h3 id="basic-agricultural-analysis">2. Basic Agricultural Analysis<a class="anchor" aria-label="anchor" href="#basic-agricultural-analysis"></a>
 </h3>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Analyze just agricultural data</span></span>
 <span><span class="va">results</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/run_builtin_analysis.html">run_builtin_analysis</a></span><span class="op">(</span></span>
 <span>  scale <span class="op">=</span> <span class="st">"county"</span>,</span>
@@ -178,7 +184,7 @@ directory</p>
 <div class="section level3">
 <h3 id="add-wwtp-data">3. Add WWTP Data<a class="anchor" aria-label="anchor" href="#add-wwtp-data"></a>
 </h3>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Analysis with wastewater plants (2007-2016 available)</span></span>
 <span><span class="va">results_wwtp</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/run_builtin_analysis.html">run_builtin_analysis</a></span><span class="op">(</span></span>
 <span>  scale <span class="op">=</span> <span class="st">"huc8"</span>,</span>
@@ -216,7 +222,7 @@ accept manure</li>
 <div class="section level3">
 <h3 id="accessing-results">Accessing Results<a class="anchor" aria-label="anchor" href="#accessing-results"></a>
 </h3>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Agricultural data with classifications</span></span>
 <span><span class="va">agri_data</span> <span class="op">&lt;-</span> <span class="va">results</span><span class="op">$</span><span class="va">agricultural</span></span>
 <span></span>
@@ -236,7 +242,7 @@ accept manure</li>
 <div class="section level3">
 <h3 id="classification-maps">Classification Maps<a class="anchor" aria-label="anchor" href="#classification-maps"></a>
 </h3>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Basic nitrogen map</span></span>
 <span><span class="va">n_map</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/map_agricultural_classification.html">map_agricultural_classification</a></span><span class="op">(</span></span>
 <span>  data <span class="op">=</span> <span class="va">results</span><span class="op">$</span><span class="va">agricultural</span>,</span>
@@ -251,7 +257,7 @@ accept manure</li>
 <div class="section level3">
 <h3 id="wwtp-maps">WWTP Maps<a class="anchor" aria-label="anchor" href="#wwtp-maps"></a>
 </h3>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Map WWTP facilities</span></span>
 <span><span class="va">facility_map</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/map_wwtp_points.html">map_wwtp_points</a></span><span class="op">(</span></span>
 <span>  <span class="va">results</span><span class="op">$</span><span class="va">wwtp</span><span class="op">$</span><span class="va">nitrogen</span><span class="op">$</span><span class="va">spatial_data</span>,</span>
@@ -273,7 +279,7 @@ accept manure</li>
 <div class="section level3">
 <h3 id="single-years">Single Years<a class="anchor" aria-label="anchor" href="#single-years"></a>
 </h3>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Any year 1987-2016 for agricultural data</span></span>
 <span><span class="va">results_1990</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/run_builtin_analysis.html">run_builtin_analysis</a></span><span class="op">(</span>scale <span class="op">=</span> <span class="st">"county"</span>, year <span class="op">=</span> <span class="fl">1990</span>, </span>
 <span>                                     nutrients <span class="op">=</span> <span class="st">"nitrogen"</span>, include_wwtp <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
@@ -288,7 +294,7 @@ accept manure</li>
 <div class="section level3">
 <h3 id="multiple-years">Multiple Years<a class="anchor" aria-label="anchor" href="#multiple-years"></a>
 </h3>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Analyze several years at once</span></span>
 <span><span class="va">batch_results</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/batch_analysis_years.html">batch_analysis_years</a></span><span class="op">(</span></span>
 <span>  years <span class="op">=</span> <span class="fl">2014</span><span class="op">:</span><span class="fl">2016</span>,</span>
@@ -302,7 +308,7 @@ accept manure</li>
 <h2 id="using-custom-wwtp-data">Using Custom WWTP Data<a class="anchor" aria-label="anchor" href="#using-custom-wwtp-data"></a>
 </h2>
 <p>For years outside 2007-2016, provide your own WWTP data:</p>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Use your own WWTP files</span></span>
 <span><span class="va">results_2020</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/run_builtin_analysis.html">run_builtin_analysis</a></span><span class="op">(</span></span>
 <span>  scale <span class="op">=</span> <span class="st">"huc8"</span>,</span>
@@ -316,7 +322,7 @@ accept manure</li>
 <div class="section level2">
 <h2 id="state-specific-analysis">State-Specific Analysis<a class="anchor" aria-label="anchor" href="#state-specific-analysis"></a>
 </h2>
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Analyze a specific state</span></span>
 <span><span class="va">texas_results</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/run_state_analysis.html">run_state_analysis</a></span><span class="op">(</span></span>
 <span>  state <span class="op">=</span> <span class="st">"TX"</span>,</span>
@@ -337,7 +343,7 @@ accept manure</li>
 <div class="section level2">
 <h2 id="loading-individual-datasets">Loading Individual Datasets<a class="anchor" aria-label="anchor" href="#loading-individual-datasets"></a>
 </h2>
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Load specific datasets</span></span>
 <span><span class="va">county_2016</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/load_builtin_nugis.html">load_builtin_nugis</a></span><span class="op">(</span><span class="st">"county"</span>, <span class="fl">2016</span><span class="op">)</span></span>
 <span><span class="va">huc8_boundaries</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/load_builtin_boundaries.html">load_builtin_boundaries</a></span><span class="op">(</span><span class="st">"huc8"</span><span class="op">)</span></span>
@@ -352,7 +358,7 @@ accept manure</li>
 <div class="section level3">
 <h3 id="memory-management">Memory Management<a class="anchor" aria-label="anchor" href="#memory-management"></a>
 </h3>
-<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># For large analyses, clear cache if needed</span></span>
 <span><span class="fu"><a href="../reference/clear_data_cache.html">clear_data_cache</a></span><span class="op">(</span><span class="op">)</span></span>
 <span></span>
@@ -362,7 +368,7 @@ accept manure</li>
 <div class="section level3">
 <h3 id="quality-checks">Quality Checks<a class="anchor" aria-label="anchor" href="#quality-checks"></a>
 </h3>
-<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Always validate your results</span></span>
 <span><span class="fu"><a href="../reference/quick_check.html">quick_check</a></span><span class="op">(</span><span class="va">results</span><span class="op">)</span></span>
 <span></span>
@@ -391,7 +397,7 @@ options<br>
 <div class="section level2">
 <h2 id="getting-help">Getting Help<a class="anchor" aria-label="anchor" href="#getting-help"></a>
 </h2>
-<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Function documentation</span></span>
 <span><span class="op">?</span><span class="va">run_builtin_analysis</span></span>
 <span><span class="op">?</span><span class="va">quick_analysis</span></span>

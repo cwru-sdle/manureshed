@@ -151,12 +151,12 @@ results <- quick_state_analysis(
 #> 
 #> Generating state visualizations...
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/RtmpNpFMAi/state_tx_results/map_tx_agricultural_nitrogen_2016.png
+#> Saved plot to: /tmp/Rtmp0dSqZ3/state_tx_results/map_tx_agricultural_nitrogen_2016.png
 #> Dimensions: 10 x 8 in at 300 DPI
 #> File size: 436.41 KB
 #> Device: png
 #> Retrieving data for the year 2024
-#> Saved plot to: /tmp/RtmpNpFMAi/state_tx_results/map_tx_combined_nitrogen_2016.png
+#> Saved plot to: /tmp/Rtmp0dSqZ3/state_tx_results/map_tx_combined_nitrogen_2016.png
 #> Dimensions: 10 x 8 in at 300 DPI
 #> File size: 435.83 KB
 #> Device: png

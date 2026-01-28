@@ -60,26 +60,26 @@ p <- ggplot(mtcars, aes(x = mpg, y = hp)) + geom_point()
 
 # Save with default settings (300 DPI, 11x6 inches)
 save_plot(p, file.path(tempdir(), "test_plot.png"))
-#> Saved plot to: /tmp/RtmpNpFMAi/test_plot.png
+#> Saved plot to: /tmp/Rtmp0dSqZ3/test_plot.png
 #> Dimensions: 11 x 6 in at 300 DPI
 #> File size: 50.33 KB
 #> Device: png
-#> [1] "/tmp/RtmpNpFMAi/test_plot.png"
+#> [1] "/tmp/Rtmp0dSqZ3/test_plot.png"
 
 # Save with custom dimensions for presentation
 save_plot(p, file.path(tempdir(), "presentation_plot.png"), width = 16, height = 9)
-#> Saved plot to: /tmp/RtmpNpFMAi/presentation_plot.png
+#> Saved plot to: /tmp/Rtmp0dSqZ3/presentation_plot.png
 #> Dimensions: 16 x 9 in at 300 DPI
 #> File size: 72.17 KB
 #> Device: png
-#> [1] "/tmp/RtmpNpFMAi/presentation_plot.png"
+#> [1] "/tmp/Rtmp0dSqZ3/presentation_plot.png"
 
 # Save as PDF for publication
 save_plot(p, file.path(tempdir(), "publication_figure.pdf"), width = 8, height = 6)
-#> Saved plot to: /tmp/RtmpNpFMAi/publication_figure.pdf
+#> Saved plot to: /tmp/Rtmp0dSqZ3/publication_figure.pdf
 #> Dimensions: 8 x 6 in at 300 DPI
 #> File size: 6.25 KB
 #> Device: pdf
-#> [1] "/tmp/RtmpNpFMAi/publication_figure.pdf"
+#> [1] "/tmp/Rtmp0dSqZ3/publication_figure.pdf"
 # }
 ```

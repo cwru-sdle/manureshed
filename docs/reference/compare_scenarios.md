@@ -108,15 +108,15 @@ base <- run_builtin_analysis(year = 2016, include_wwtp = FALSE,
 #> WWTP analysis skipped
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/RtmpNpFMAi/county_agricultural_2016.rds
+#> Saved spatial data to: /tmp/Rtmp0dSqZ3/county_agricultural_2016.rds
 #> File size: 1.04 MB
 #> Rows: 3112, Columns: 17
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved analysis summary to: /tmp/RtmpNpFMAi/analysis_summary_2016.rds
+#> Saved analysis summary to: /tmp/Rtmp0dSqZ3/analysis_summary_2016.rds
 #> Format: RDS
-#> File size: 0.5 KB
-#>  Results saved to:/tmp/RtmpNpFMAi
+#> File size: 0.49 KB
+#>  Results saved to:/tmp/Rtmp0dSqZ3
 #>   Files created:2
 #> 
 #> ======================================================================
@@ -127,7 +127,7 @@ base <- run_builtin_analysis(year = 2016, include_wwtp = FALSE,
 #> Year:2016
 #> Nutrients analyzed:nitrogen
 #> Spatial units:3112
-#> Output directory:/tmp/RtmpNpFMAi
+#> Output directory:/tmp/Rtmp0dSqZ3
 #> ======================================================================
 wwtp <- run_builtin_analysis(year = 2016, include_wwtp = TRUE,
                               scale = "county", nutrients = "nitrogen")
@@ -222,37 +222,37 @@ wwtp <- run_builtin_analysis(year = 2016, include_wwtp = TRUE,
 #>  Integration complete
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/RtmpNpFMAi/county_agricultural_2016.rds
+#> Saved spatial data to: /tmp/Rtmp0dSqZ3/county_agricultural_2016.rds
 #> File size: 1.04 MB
 #> Rows: 3112, Columns: 17
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpNpFMAi/county_nitrogen_integrated_2016.rds
+#> Saved spatial data to: /tmp/Rtmp0dSqZ3/county_nitrogen_integrated_2016.rds
 #> File size: 1.1 MB
 #> Rows: 3112, Columns: 23
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpNpFMAi/county_nitrogen_centroids_2016.csv
+#> Saved centroid data to: /tmp/Rtmp0dSqZ3/county_nitrogen_centroids_2016.csv
 #> File size: 760.52 KB
 #> Rows: 3112, Columns: 24
 #> Longitude range: [-124.158, -67.637]
 #> Latitude range: [25.49, 48.826]
-#> Saved analysis summary to: /tmp/RtmpNpFMAi/analysis_summary_2016.rds
+#> Saved analysis summary to: /tmp/Rtmp0dSqZ3/analysis_summary_2016.rds
 #> Format: RDS
 #> File size: 0.7 KB
-#>  Results saved to:/tmp/RtmpNpFMAi
+#>  Results saved to:/tmp/Rtmp0dSqZ3
 #>   Files created:4
 #> 
 #> ======================================================================
 #> ANALYSIS COMPLETE
 #> ======================================================================
-#> Processing time:0.06minutes
+#> Processing time:0.04minutes
 #> Scale:county
 #> Year:2016
 #> Nutrients analyzed:nitrogen
 #> Spatial units:3112
 #> WWTP facilities:20846
-#> Output directory:/tmp/RtmpNpFMAi
+#> Output directory:/tmp/Rtmp0dSqZ3
 #> ======================================================================
 
 # Compare scenarios

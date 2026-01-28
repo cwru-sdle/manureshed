@@ -49,6 +49,12 @@ different spatial scales (county, HUC8 watershed, HUC2 region) and can
 integrate wastewater treatment plant (WWTP) effluent data to show how
 municipal nutrient loads affect agricultural areas.
 
+## View cheatsheet
+
+``` r
+view_cheatsheet()
+```
+
 ## Quick Start - Complete Analysis
 
 The easiest way to get started is with

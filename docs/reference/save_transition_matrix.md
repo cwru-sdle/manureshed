@@ -168,47 +168,47 @@ results <- run_builtin_analysis(scale = "county", year = 2016, include_wwtp = TR
 #>  Integration complete
 #> 
 #> Saving results...
-#> Saved spatial data to: /tmp/RtmpNpFMAi/county_agricultural_2016.rds
+#> Saved spatial data to: /tmp/Rtmp0dSqZ3/county_agricultural_2016.rds
 #> File size: 1.04 MB
 #> Rows: 3112, Columns: 17
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved spatial data to: /tmp/RtmpNpFMAi/county_nitrogen_integrated_2016.rds
+#> Saved spatial data to: /tmp/Rtmp0dSqZ3/county_nitrogen_integrated_2016.rds
 #> File size: 1.1 MB
 #> Rows: 3112, Columns: 23
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpNpFMAi/county_nitrogen_centroids_2016.csv
+#> Saved centroid data to: /tmp/Rtmp0dSqZ3/county_nitrogen_centroids_2016.csv
 #> File size: 760.52 KB
 #> Rows: 3112, Columns: 24
 #> Longitude range: [-124.158, -67.637]
 #> Latitude range: [25.49, 48.826]
-#> Saved spatial data to: /tmp/RtmpNpFMAi/county_phosphorus_integrated_2016.rds
+#> Saved spatial data to: /tmp/Rtmp0dSqZ3/county_phosphorus_integrated_2016.rds
 #> File size: 1.09 MB
 #> Rows: 3112, Columns: 23
 #> Geometry type: POLYGON
 #> CRS: EPSG:5070
-#> Saved centroid data to: /tmp/RtmpNpFMAi/county_phosphorus_centroids_2016.csv
+#> Saved centroid data to: /tmp/Rtmp0dSqZ3/county_phosphorus_centroids_2016.csv
 #> File size: 736.85 KB
 #> Rows: 3112, Columns: 24
 #> Longitude range: [-124.158, -67.637]
 #> Latitude range: [25.49, 48.826]
-#> Saved analysis summary to: /tmp/RtmpNpFMAi/analysis_summary_2016.rds
+#> Saved analysis summary to: /tmp/Rtmp0dSqZ3/analysis_summary_2016.rds
 #> Format: RDS
 #> File size: 0.77 KB
-#>  Results saved to:/tmp/RtmpNpFMAi
+#>  Results saved to:/tmp/Rtmp0dSqZ3
 #>   Files created:6
 #> 
 #> ======================================================================
 #> ANALYSIS COMPLETE
 #> ======================================================================
-#> Processing time:0.08minutes
+#> Processing time:0.07minutes
 #> Scale:county
 #> Year:2016
 #> Nutrients analyzed:nitrogen, phosphorus
 #> Spatial units:3112
 #> WWTP facilities:30994
-#> Output directory:/tmp/RtmpNpFMAi
+#> Output directory:/tmp/Rtmp0dSqZ3
 #> ======================================================================
 
 # Save transition probabilities (only if integrated results exist)
@@ -222,7 +222,7 @@ if ("integrated" %in% names(results) && "nitrogen" %in% names(results$integrated
 #> TRANSITION PROBABILITY MATRIX METADATA
 #> ======================================
 #> 
-#> created_date:2026-01-25 20:49:52.229607
+#> created_date:2026-01-27 20:16:50.174048
 #> nutrient:nitrogen
 #> analysis_type:combined
 #> n_categories:4
@@ -231,10 +231,10 @@ if ("integrated" %in% names(results) && "nitrogen" %in% names(results$integrated
 #>   Sink_Fertilizer
 #>   Source
 #>   Within_County
-#> Saved transition matrix to: /tmp/RtmpNpFMAi/transitions_nitrogen.csv
-#> Saved metadata to: /tmp/RtmpNpFMAi/transitions_nitrogen_metadata.txt
+#> Saved transition matrix to: /tmp/Rtmp0dSqZ3/transitions_nitrogen.csv
+#> Saved metadata to: /tmp/Rtmp0dSqZ3/transitions_nitrogen_metadata.txt
 #> File size: 0.19 KB
 #> Matrix dimensions: 4 x 4
-#> [1] "/tmp/RtmpNpFMAi/transitions_nitrogen.csv"
+#> [1] "/tmp/Rtmp0dSqZ3/transitions_nitrogen.csv"
 # }
 ```

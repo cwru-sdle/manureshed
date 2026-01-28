@@ -57,7 +57,7 @@ citation_info()
 #> Barcelos, E. I.; & French, R. H. (2025).
 #> manureshed: An Open-Source R Package for Scalable Temporal and Multi-Regional
 #> Analysis of Integrated Agricultural-Municipal Nutrient Flows.
-#> R package version 0.1.1.
+#> R package version 0.1.2.
 #> OSF Repository: https://osf.io/g39xa/
 #> For the underlying research methodology, cite:
 #> Akanbi, O. D.; Gupta, A.; Mandayam, V.; Flynn, K. C.; Yarus, J. M.;

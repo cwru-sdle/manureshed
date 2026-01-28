@@ -27,7 +27,7 @@ of wastewater treatment plant (WWTP) discharge data.
 
 ## 🔗 Quick Links
 
-- **Documentation**: <https://exelegch.github.io/manureshed-docs/>
+- **Documentations**: <https://exelegch.github.io/manureshed-docs/>
 - **CRAN**: <https://cran.r-project.org/package=manureshed>
 - **OSF Data Repository**: <https://osf.io/g39xa/>
 - **GitHub**: <https://github.com/cwru-sdle/manureshed>
@@ -190,17 +190,20 @@ ohio <- run_state_analysis(
 
 ### Vignettes and Tutorials
 
+- [**Interactive
+  Dashboard**](https://exelegch.github.io/manureshed-docs/articles/dashboard-guide.html) -
+  User-friendly interface for non-coders
 - [**Getting
-  Started**](https://cran.r-project.org/web/packages/manureshed/vignettes/getting-started.html) -
+  Started**](https://exelegch.github.io/manureshed-docs/articles/getting-started.html) -
   Package overview and basic workflows
 - [**Data
-  Integration**](https://cran.r-project.org/web/packages/manureshed/vignettes/data-integration.html) -
+  Integration**](https://exelegch.github.io/manureshed-docs/articles/data-integration.html) -
   Using custom WWTP data
 - [**Visualization
-  Guide**](https://cran.r-project.org/web/packages/manureshed/vignettes/visualization-guide.html) -
+  Guide**](https://exelegch.github.io/manureshed-docs/articles/visualization-guide.html) -
   Mapping and plotting options
 - [**Advanced
-  Features**](https://cran.r-project.org/web/packages/manureshed/vignettes/advanced-features.html) -
+  Features**](https://exelegch.github.io/manureshed-docs/articles/advanced-features.html) -
   State analysis, custom thresholds, parallel processing
 
 ### Function Reference
@@ -434,6 +437,8 @@ Facility locations and identifiers - Permit information
 
 **Pre-processing**: Cleaned and quality-controlled in manureshed package
 
+**License**: Public domain (U.S. Government work)
+
 ### Spatial Boundaries
 
 **Sources**: - US Census TIGER (counties) - USGS Watershed Boundary
@@ -555,8 +560,8 @@ We welcome contributions! To contribute:
 
 ### Getting Help
 
-- 📖 **Documentation**: Check our
-  [vignettes](https://cran.r-project.org/web/packages/manureshed/vignettes/)
+- 📖 **Documentation**: Check our [All
+  Documentation](https://exelegch.github.io/manureshed-docs/)
 - 🐛 **Bug Reports**: [GitHub
   Issues](https://github.com/cwru-sdle/manureshed/issues)
 - 💬 **Questions**: Contact maintainers or open a discussion
@@ -590,11 +595,8 @@ Centers award 2133576.
 - **The Fertilizer Institute (TFI)** and **Plant Nutrition Canada
   (PNC)** for NuGIS data
 - **U.S. Environmental Protection Agency** for WWTP discharge data
-- This research is supported by the **United States Department of
-  Agriculture (USDA)**, which is an equal opportunity provider and
-  employer
 - R Core Team and CRAN maintainers
-- Spatial R community (`sf`, `ggplot2` developers)
+- Spatial R community (`sf`, `terra`, `ggplot2` developers)
 
 ### Development Team
 
@@ -610,7 +612,7 @@ Centers award 2133576.
 
 **Ready to get started?** Install from CRAN with
 `install.packages("manureshed")` and check out the [Getting Started
-vignette](https://cran.r-project.org/web/packages/manureshed/vignettes/getting-started.html)!
+vignette](https://exelegch.github.io/manureshed-docs/articles/getting-started.html)!
 
 **Questions?** Run
 [`health_check()`](https://exelegch.github.io/manureshed-docs/reference/health_check.md)
